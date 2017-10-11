@@ -1,5 +1,5 @@
-body {
-    overflow: hidden;
+body::-webkit-scrollbar {
+    display: none;
 }
 
 #navbar {
@@ -28,24 +28,39 @@ body {
     width: 400%;
 }
 .page {
-    display: inline-block;
-    width: 100%;
+    display: block;
+    float: left;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 25%;
     height: 100vh;
     padding: 50px;
 }
 
 .home {
     background-color: rgba(0, 0, 0, 1);
+    background-image: url(images/binary/binary1LG.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .about {
     background-color: rgba(0, 0, 0, 0.9);
+    background-image: url(images/binary/binary2LG.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .talent {
     background-color: rgba(0, 0, 0, 1);
+    background-image: url(images/binary/binary3LG.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .contact {
     background-color: rgba(0, 0, 0, 0.9);
+    background-image: url(images/binary/binary4LG.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
