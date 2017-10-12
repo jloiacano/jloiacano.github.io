@@ -12,11 +12,8 @@ body::-webkit-scrollbar {
   background-color: dimgray;
   color: black;
 }
-#navbar ul li a .singleSpace {
-  padding-left: 1em;
-}
 .allPages {
-  width: 400%;
+  width: 100%;
 }
 .page {
   display: block;
