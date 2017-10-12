@@ -13,7 +13,7 @@ body::-webkit-scrollbar {
   color: black;
 }
 .allPages {
-  width: 100%;
+  width: 400%;
 }
 .page {
   display: block;
