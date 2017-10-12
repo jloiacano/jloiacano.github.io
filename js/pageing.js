@@ -6,16 +6,26 @@
 
 // slide the allPages <div>
 
-/*
-var pageWidth = document.body.clientWidth;
+var pageWidth;
+var currentPage;
 
-var currentPage = 1;
-var pageToGoTo = 1;
-*/
+document.getElementById("home").addEventListener("click", function() { goToPage(1) });
+document.getElementById("about").addEventListener("click", function() { goToPage(2) });
+document.getElementById("talents").addEventListener("click", function() { goToPage(3) });
+document.getElementById("contact").addEventListener("click", function() { goToPage(4) });
+
+function goToPage(page) {
+    "use strict";
+    pageWidth = document.body.clientWidth;
+    currentPage = page;
+    var pointToGoTo = (currentPage - 1) * pageWidth;
+    window.scrollTo(pointToGoTo, 0);
+}
 
 function loadThePage() {
     "use strict";
-    window.alert(document.body.clientWidth);
+    pageWidth = document.body.clientWidth;
+    currentPage = 1;
 }
 
 window.onload = function () {

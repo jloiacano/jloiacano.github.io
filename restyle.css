@@ -5,6 +5,9 @@ body::-webkit-scrollbar {
 #navbar ul img {
   border-radius: 3px;
 }
+#navbar ul li {
+  padding-left: 1em;
+}
 #navbar ul li:hover {
   background-color: dimgray;
   color: black;

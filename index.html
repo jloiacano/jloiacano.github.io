@@ -13,8 +13,6 @@
     <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-    <script type="text/javascript" src="js/pageing.js"></script>
 </head>
 
 <body>
@@ -28,13 +26,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-                <a class="navbar-brand" href="#">J Loiacano</a>
+                <a id="home" class="navbar-brand" href="">J Loiacano</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#about">Who Is J?</a></li>
-                    <li><a href="#talent">What Does He Do?</a></li>
-                    <li><a href="#contact">Contact Him</a></li>
+                    <li id="home">J Loiacano</li>
+                    <li id="about">Who Is J?</li>
+                    <li id="talents">What Does He Do?</li>
+                    <li id="contact">Contact Him</li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">His Links <span class="caret"></span></a>
                         <ul class="dropdown-menu">
@@ -50,7 +49,7 @@
             <!--/.nav-collapse -->
         </div>
     </nav>
-    <div class="allPages">
+    <div id="allPages" class="allPages">
         <a name="home"></a>
         <div class="page home">
             <h1>HOME</h1>
@@ -91,6 +90,8 @@
             </form>
         </div>
     </div>
+
+    <script type="text/javascript" src="js/pageing.js"></script>
 </body>
 
 </html>
