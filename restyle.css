@@ -12,16 +12,16 @@ body, html, main {
 }
 
 .cd-fixed-bg.cd-bg-1 {
-  background-image: url("../img/cd-background-1.jpg");
+  background-image: url("../images/backgrounds/top-milky-way.jpg");
 }
 .cd-fixed-bg.cd-bg-2 {
-  background-image: url("../img/cd-background-2.jpg");
+  background-image: url("../images/backgrounds/middle-sky.jpg");
 }
 .cd-fixed-bg.cd-bg-3 {
-  background-image: url("../img/cd-background-3.jpg");
+  background-image: url("../images/backgrounds/botom-chicago.jpg");
 }
 .cd-fixed-bg.cd-bg-4 {
-  background-image: url("../img/cd-background-4.jpg");
+  background-image: url("../images/backgrounds/bottom-chicago-2.jpg");
 }
 
 .cd-scrolling-bg {
