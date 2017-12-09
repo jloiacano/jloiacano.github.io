@@ -31,10 +31,10 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li id="home">J Loiacano</li>
-                    <li id="about">Who Is J?</li>
-                    <li id="talents">What Does He Do?</li>
-                    <li id="contact">Contact Him</li>
+                    <li id="home" class="nav-item"><a class="nav-link" href="javascript: aBlankFunction('home');">J Loiacano</a></li>
+                    <li id="about" class="nav-item"><a class="nav-link" href="javascript: aBlankFunction('about');">Who Is J?</a></li>
+                    <li id="talents" class="nav-item"><a class="nav-link" href="javascript: aBlankFunction('talents');">What Does He Do?</a></li>
+                    <li id="contact" class="nav-item">Contact Him</li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">His Links <span class="caret"></span></a>
                         <ul class="dropdown-menu">
@@ -50,49 +50,19 @@
             <!--/.nav-collapse -->
         </div>
     </nav>
-    <div id="allPages" class="allPages">
-        <a name="home"></a>
-        <div class="page home">
-            <h1>HOME</h1>
-        </div>
+    <main>
+	<div class="cd-fixed-bg cd-bg-1">
+		<h1><!-- title goes here --></h1>
+	</div>
 
-        <div class="page about">
-            <h1>ABOUT</h1>
-        </div>
-        <a name="about"></a>
-
-        <div class="page talent">
-            <h1>TALENT</h1>
-            <a name="talent"></a>
-        </div>
-
-        <div class="page contact">
-            <a name="contact"></a>
-            <form>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputFile">File input</label>
-                    <input type="file" id="exampleInputFile">
-                    <p class="help-block">Example block-level help text here.</p>
-                </div>
-                <div class="checkbox">
-                    <label>
-      <input type="checkbox"> Check me out
-    </label>
-                </div>
-                <button type="submit" class="btn btn-default">Submit</button>
-            </form>
-        </div>
-    </div>
-
-    <script type="text/javascript" src="js/pageing.js"></script>
+	<div class="cd-scrolling-bg cd-color-2">
+		<div class="cd-container">
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore incidunt suscipit similique, dolor corrupti cumque qui consectetur autem laborum fuga quas ipsam doloribus sequi...
+			</p>
+		</div>
+	</div>
+</main>
 </body>
 
 </html>
