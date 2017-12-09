@@ -27,3 +27,7 @@ body, html, main {
 .cd-scrolling-bg {
 	min-height: 100%;
 }
+
+cd-color-1 {
+    background-color: lime;
+}
