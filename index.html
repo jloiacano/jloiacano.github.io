@@ -31,10 +31,9 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li id="home" class="nav-item"><a class="nav-link" href="javascript: aBlankFunction('home');">J Loiacano</a></li>
-                    <li id="about" class="nav-item"><a class="nav-link" href="javascript: aBlankFunction('about');">Who Is J?</a></li>
-                    <li id="talents" class="nav-item"><a class="nav-link" href="javascript: aBlankFunction('talents');">What Does He Do?</a></li>
-                    <li id="contact" class="nav-item">Contact Him</li>
+                    <li id="home" class="nav-item"><a class="nav-link" href="javascript: scrollWin(1);">Who Is J?</a></li>
+                    <li id="about" class="nav-item"><a class="nav-link" href="javascript: scrollWin(2);">What Does He Do?</a></li>
+                    <li id="talents" class="nav-item"><a class="nav-link" href="javascript: scrollWin(3);">Contact Him!</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">His Links <span class="caret"></span></a>
                         <ul class="dropdown-menu">
@@ -51,46 +50,69 @@
         </div>
     </nav>
     <main>
-	<div class="cd-fixed-bg cd-bg-1">
-		<h1>A title</h1>
-	</div>
+        <div class="cd-fixed-bg cd-bg-1">
+            <div class="row">
+                <div class="col-xs-12" align="center">
+                    <h1>A title</h1>
+                </div>
+            </div>
+        </div>
 
-	<div class="cd-scrolling-bg cd-color-1">
-		<div class="cd-container">
-            <h2>About J</h2>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore incidunt suscipit similique, dolor corrupti cumque qui consectetur autem laborum fuga quas ipsam doloribus sequi...
-			</p>
-		</div>
-	</div>
+        <div class="cd-scrolling-bg cd-color-1" id="About">
+            <div class="cd-container">
+                <h2>About J</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore incidunt suscipit similique, dolor corrupti cumque qui consectetur autem laborum fuga quas ipsam doloribus sequi...
+                </p>
+            </div>
+        </div>
 
-	<div class="cd-fixed-bg cd-bg-2">
-		<h1>A title</h1>
-	</div>
+        <div class="cd-fixed-bg cd-bg-2">
+            <div class="row">
+                <div class="col-xs-12" align="center">
+                    <h1>A title</h1>
+                </div>
+            </div>
+        </div>
 
-	<div class="cd-scrolling-bg cd-color-2">
-		<div class="cd-container">
-            <h2>J's Skills and Work</h2>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore incidunt suscipit similique, dolor corrupti cumque qui consectetur autem laborum fuga quas ipsam doloribus sequi...
-			</p>
-		</div>
-	</div>
+        <div class="cd-scrolling-bg cd-color-2" id="Skills">
+            <div class="cd-container">
+                <h2>J's Skills and Work</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore incidunt suscipit similique, dolor corrupti cumque qui consectetur autem laborum fuga quas ipsam doloribus sequi...
+                </p>
+            </div>
+        </div>
 
-	<div class="cd-fixed-bg cd-bg-3">
-		<h1>A third title</h1>
-	</div>
+        <div class="cd-fixed-bg cd-bg-3">
+            <h1>A third title</h1>
+        </div>
 
-	<div class="cd-scrolling-bg cd-color-3">
-		<div class="cd-container">
-            <h2>Contact J</h2>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore incidunt suscipit similique, dolor corrupti cumque qui consectetur autem laborum fuga quas ipsam doloribus sequi...
-			</p>
-		</div>
-	</div>
+        <div class="cd-scrolling-bg cd-color-3" id="Contact">
+            <div class="cd-container">
+                <h2>Contact J</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore incidunt suscipit similique, dolor corrupti cumque qui consectetur autem laborum fuga quas ipsam doloribus sequi...
+                </p>
+            </div>
+        </div>
 
-</main>
+    </main>
+    <div>
+        Special Thanks: Sebastiano Guerriero https://codyhouse.co/gem/alternate-fixed-scroll-backgrounds/ Geoff Graham https://css-tricks.com/snippets/css/star-wars-crawl-text/
+
+    </div>
+    <script>
+        function scrollWin(howManyHeights) {
+            var h = howManyHeights * window.innerHeight;
+            var a = document.getElementById("About").height;
+            var b = document.getElementById("Skills").height;
+            var c = document.getElementById("Contact").height;
+            //window.alert(document.getElementById("About").height);
+            window.alert("test");
+            window.scrollBy(0, h);
+        }
+    </script>
 </body>
 
 </html>
