@@ -1,6 +1,8 @@
 body, html, main {
 	/* important */
 	height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .cd-fixed-bg {
@@ -28,6 +30,8 @@ body, html, main {
 	min-height: 50%;
     padding-top: 0;
     padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .cd-color-1 {
