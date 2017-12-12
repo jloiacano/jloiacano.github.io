@@ -1,6 +1,5 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-
 <head>
     <title>J Loiacano</title>
     <!-- Latest compiled and minified CSS -->
@@ -16,9 +15,10 @@
     <meta name=viewport content="width=device-width, initial-scale=1">
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
     <!-- Fixed navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -27,13 +27,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-                <a id="home" class="navbar-brand" href="">J Loiacano</a>
+                <a id="home" class="navbar-brand" href="">JL</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li id="home" class="nav-item"><a class="nav-link" href="javascript: scrollWin(1);">Who Is J?</a></li>
-                    <li id="about" class="nav-item"><a class="nav-link" href="javascript: scrollWin(2);">What Does He Do?</a></li>
-                    <li id="talents" class="nav-item"><a class="nav-link" href="javascript: scrollWin(3);">Contact Him!</a></li>
+                    <li id="home" class="nav-item"><a class="nav-link" href="#about">Who Is J?</a></li>
+                    <li id="about" class="nav-item"><a class="nav-link" href="#skills">What Does He Do?</a></li>
+                    <li id="talents" class="nav-item"><a class="nav-link" href="#contact">Contact Him!</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">His Links <span class="caret"></span></a>
                         <ul class="dropdown-menu">
@@ -49,70 +49,87 @@
             <!--/.nav-collapse -->
         </div>
     </nav>
-    <main>
-        <div class="cd-fixed-bg cd-bg-1">
+
+
+    <div class="parallax paralax-bg-image-1">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-xs-12" align="center">
-                    <h1>A title</h1>
-                </div>
             </div>
         </div>
-
-        <div class="cd-scrolling-bg cd-color-1" id="About">
-            <div class="cd-container">
-                <h2>About J</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore incidunt suscipit similique, dolor corrupti cumque qui consectetur autem laborum fuga quas ipsam doloribus sequi...
-                </p>
-            </div>
-        </div>
-
-        <div class="cd-fixed-bg cd-bg-2">
-            <div class="row">
-                <div class="col-xs-12" align="center">
-                    <h1>A title</h1>
-                </div>
-            </div>
-        </div>
-
-        <div class="cd-scrolling-bg cd-color-2" id="Skills">
-            <div class="cd-container">
-                <h2>J's Skills and Work</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore incidunt suscipit similique, dolor corrupti cumque qui consectetur autem laborum fuga quas ipsam doloribus sequi...
-                </p>
-            </div>
-        </div>
-
-        <div class="cd-fixed-bg cd-bg-3">
-            <h1>A third title</h1>
-        </div>
-
-        <div class="cd-scrolling-bg cd-color-3" id="Contact">
-            <div class="cd-container">
-                <h2>Contact J</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore incidunt suscipit similique, dolor corrupti cumque qui consectetur autem laborum fuga quas ipsam doloribus sequi...
-                </p>
-            </div>
-        </div>
-
-    </main>
-    <div>
-        Special Thanks: Sebastiano Guerriero https://codyhouse.co/gem/alternate-fixed-scroll-backgrounds/ Geoff Graham https://css-tricks.com/snippets/css/star-wars-crawl-text/
-
     </div>
-    <script>
-        function scrollWin(howManyHeights) {
-            var h = howManyHeights * window.innerHeight;
-            var a = document.getElementById("About").height;
-            var b = document.getElementById("Skills").height;
-            var c = document.getElementById("Contact").height;
-            //window.alert(document.getElementById("About").height);
-            window.alert("test");
-            window.scrollBy(0, h);
-        }
-    </script>
-</body>
 
+    <div class="scroller scroller-1" id="about">
+        <div class="scroller-padding">
+            <div class="row" id="theAboutDiv">
+                <div class="col-lg-4 col-md-12">
+
+                    <h1>ABOUT</h1>
+
+                </div>
+                <div class="col-lg-8 col-md-12">
+
+                    <div class="about-header">
+                        <h1>Who is J?</h1>
+                        <h2>J is a Full-Stack Developer. He's also an Android Developer.</h2>
+                    </div>
+
+                    <p>He does not like talking about himself in the third person... So he, I mean, I will stop.</p>
+                    <h3>HISTORY:</h3>
+                    <p>I have been programming ever since I could type on the keyboard of the, then, 'state of the art'
+                        <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwiI4MS6iYXYAhXPRN8KHaVID_AQFggpMAA&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FApple_IIe&usg=AOvVaw3hfQHC8Qa-OFJbdzH9NOko" data-toggle="tooltip" title="<img src='../images/apple2e.jpg' />">Apple //e.</a> My mother, was a
+                        <a href="https://en.wikipedia.org/wiki/Computer_programming_in_the_punched_card_era" data-toggle="tooltip" title="pən(t)SH - kärd - ˈäpəˌrādər <br />
+                        <img src='../images/punchcardop.jpeg' />From the invention of computer programming languages up to the mid-1970s, many if not most computer programmers created, edited and stored their programs line by line on punched cards. The practice was nearly universal with IBM computers in the era.">punch card operator</a> and saw the future importance of programming. She became the computer Mom in my first grade classroom and taught us to learn BASIC (of course paying special attention to my learning). After making my first turtle, I was hooked. Following that, due to the public school system not actually recognizing the importance of computers at the time, there was not much in the way of classroom learning till much later in high school (where again, I was able to "learn" BASIC, but this time not on the command line). In the mean time, I was able to occasionally occupy myself with one of the random UNIX, Pascal, or other books that my mother would bring home from work.</p>
+
+                    <p>Once in college, I got my first PC that was all mine, an AST advantage with Windows 95 and a Pentium processor that ran a whopping 166MHz! I was the only student that I know of handing in thier projects in HTML. And you know that I kept many of them if you want to go to the way way WAY back machine and see some of them. (if i get enough requests, I might just have to upload some...)</p>
+                    <p>Following college, adult life got in the way, as it often does, and the time for hobbying was limited. I was able to do a couple websites about 6 years ago when I got an unexpected burst of free time, and I was barely able to keep up here and there with the tech that was coming out as it did. But, this was not enough. So, the time came. It was time to turn my hobby (that I didn't have enough time for) into a career, so I could actually spend the time that I wanted to, doing what I loved. This, in turn, leads us to:</p>
+
+                    <h3>RECENT:</h3>
+                    <p>I am a recent graduate of
+                        <a href="https://www.udacity.com/course/android-developer-nanodegree-by-google--nd801" data-toggle="tooltip" title="<img src='../images/udacity-logo-sm.png' />">Udacity</a> where I earned my Nanodegree in the "Android Development by Google" course. I was able to learn the ins and outs of the Android OS (recalling my early UNIX reading) and how to develop apps to run on it; including the Gradle build tool, Android Studio IDE, Java, Git and gitHub, using third party libraries, and API calls.</p>
+
+                    <p>The Udacity course was nothing short of awesome, but now that I had dipped my toe in the pool, I had to dive in and make myself even more versatile; on to bootcamp!</p>
+
+                    <p>I am also, now, a recent graduate of
+                        <a href="http://codingtemple.com/full-time-programming-bootcamp/" data-toggle="tooltip" title="<img src='../images/ct-logo-sm.png' />">Coding Temple</a>
+                        in their .NET bootcamp. Talk about INTENSE! Bootcamps are not for everyoe. You must really have a passion for what you are getting into. There I learned a myraid of new skills; C#, ASP .NET MVC, Entity Framework, AngularJS, jQuery, Bootstrap, LESS and SASS. And, I got to brush up on the technologies that I knew; HTML5, CSS3, Javascript, and SQL. As overwhelming as it was, the rewards of this program were boundless.</p>
+
+                    <h3>CURRENT:</h3>
+                    <h4>I have the tools. I have the capability.</h4>
+                    <p>I may not be able to make the Six Million Dollar Man, or even introduce you to Lee Majors, but I most definitly can connect you or your company to your clients in any technological way you can imagine. If you can dream it, I can build it for you!</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="parallax paralax-bg-image-2"></div>
+
+    <div class="scroller scroller-2" id="skills">
+        <div class="scroller-padding">
+            <h1>SKILLS</h1>
+        </div>
+    </div>
+
+    <div class="parallax paralax-bg-image-3"></div>
+
+    <div class="scroller scroller-3" id="contact">
+        <div class="scroller-padding">
+            <h1>CONTACT</h1>
+        </div>
+    </div>
+
+    <footer>
+        <p><a href="https://github.com/jloiacano">&copy; 2017 - Loiacano Designs</a></p>
+    </footer>
+
+
+    <script>
+        $('#theAboutDiv [data-toggle="tooltip"]').tooltip({
+            animation: 'fade',
+            placement: 'bottom',
+            html: true
+        });
+    </script>
+
+</body>
 </html>
