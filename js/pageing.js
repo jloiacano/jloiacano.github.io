@@ -1,69 +1,34 @@
-(function () {
-    "use strict";
+$('#theAboutDiv [data-toggle="tooltip"]').tooltip({
+    animation: 'fade',
+    placement: 'bottom',
+    html: true
+});
 
-    var pageWidth, currentPage;
+$(function () {
+    var lastScrollTop = 0,
+        delta = 5;
+    $(window).scroll(function (event) {
+        var st = $(this).scrollTop();
+        var ss = 1;
 
-    window.aBlankFunction = function (where) {
-        console.log("aBlankFunction() called from " + where);
-    };
+        if (Math.abs(lastScrollTop - st) <= delta)
+            return;
 
-    window.delayTheVariableChange = function (number, iOrD) {
-        if (iOrD === "i") {
-            number += 1;
-            return number;
-        } else if (iOrD === "d") {
-            number -= 1;
-            return number;
+        if (st > lastScrollTop) {
+            // downscroll code
+            var a = parseInt($(".main-title").css("fontSize").slice(0, -2));
+            if (a > 0) {
+                a -= ss;
+                $(".main-title").css("fontSize", a + "px");
+            }
         } else {
-            console.log("issue with iOrD in delayTheVariableChange");
-            return number;
-        }
-    };
-
-    window.goToPage = function (page) {
-        console.log("goToPage() started");
-        pageWidth = document.body.clientWidth;
-        var currentX = ((currentPage - 1) * pageWidth),
-            pointToGoTo = ((page - 1) * pageWidth);
-        currentPage = page;
-        console.log("currentX = " + currentX + "\npointToGoTo = " + pointToGoTo);
-        while (currentX !== pointToGoTo) {
-            console.log("goToPage while loop started.");
-            if (currentX > pointToGoTo) {
-                currentX = window.setTimeout(window.delayTheVariableChange(currentX, 'd'), 100);
-                console.log("currentX: " + currentX);
-                window.scrollTo(currentX, 0);
-            } else if (currentX < pointToGoTo) {
-                currentX = window.setTimeout(window.delayTheVariableChange(currentX, 'i'), 100);
-                window.setTimeout(window.aBlankFunction('setTimeout'), 100);
-                console.log("currentX: " + currentX);
-                window.scrollTo(currentX, 0);
-            } else {
-                console.log("currentX and pointToGoTo are equal");
+            // upscroll
+            var b = parseInt($(".main-title").css("fontSize").slice(0, -2));
+            if (b < 48) {
+                b += ss;
+                $(".main-title").css("fontSize", (b + "px"));
             }
         }
-    };
-
-    document.getElementById("home").addEventListener("click", function () {
-        window.goToPage(1);
+        lastScrollTop = st;
     });
-    document.getElementById("about").addEventListener("click", function () {
-        window.goToPage(2);
-    });
-    document.getElementById("talents").addEventListener("click", function () {
-        window.goToPage(3);
-    });
-    document.getElementById("contact").addEventListener("click", function () {
-        window.goToPage(4);
-    });
-
-    function loadThePage() {
-        pageWidth = document.body.clientWidth;
-        currentPage = 1;
-    }
-
-    window.onload = function () {
-        loadThePage();
-    };
-
-}());
+});

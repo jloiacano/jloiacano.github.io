@@ -43,7 +43,7 @@
                             <li><a href="https://twitter.com/byrd55" target="_blank"><img src="/images/twitterLogo40.png" alt="Twitter Logo"/><span class="singleSpace">His Twitter</span></a></li>
                             <li role="separator" class="divider"></li>
                             <li><a href="https://www.instagram.com/jloiacano/?hl=en" target="_blank"><img src="/images/instagram40.png" alt="Instagram Logo"/><span class="singleSpace">His Instagram</span></a></li>
-                            <li><a href="/docs/jLoiacanoResume.pdf" target="_blank"><img src="/images/pdf40.png" alt="Resume PDF"/><span class="singleSpace">His Resume</span></a></li>
+                            <li><a href="/docs/JLoiacanoResume.pdf" target="_blank"><img src="/images/pdf40.png" alt="Resume PDF"/><span class="singleSpace">His Resume</span></a></li>
                         </ul>
                     </li>
                 </ul>
@@ -221,7 +221,27 @@
 
     <div class="scroller scroller-3" id="contactScroller">
         <div class="scroller-padding">
-            <h1>CONTACT</h1>
+
+            <div class="row contact-row" id="theContactDiv">
+                <div class="col-lg-4 col-md-12 hidden-sm">
+                    <h1>CONTACT</h1>
+                </div>
+                <div class="col-lg-8 col-md-12">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <a href="tel:847-596-0292">847-596-0292</a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <a href="mailto:j.loiacano55@gmail.com">j.loiacano55@gmail.com</a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <address>
+                            16397 W Des Plaines Dr.
+                            Libertyville, Il 60048
+                        </address>
+
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -230,43 +250,8 @@
     </footer>
 
 
-    <script>
-        $('#theAboutDiv [data-toggle="tooltip"]').tooltip({
-            animation: 'fade',
-            placement: 'bottom',
-            html: true
-        });
+    <script src="js/pageing.js"></script>
 
-        $(function() {
-            var lastScrollTop = 0,
-                delta = 5;
-            $(window).scroll(function(event) {
-                var st = $(this).scrollTop();
-                var ss = 1;
-
-                if (Math.abs(lastScrollTop - st) <= delta)
-                    return;
-
-                if (st > lastScrollTop) {
-                    // downscroll code
-                    var a = parseInt($(".main-title").css("fontSize").slice(0,-2));
-                    if (a > 0) {
-                        a -= ss;
-                        $(".main-title").css("fontSize", a + "px");
-                    }
-                } else {
-                    // upscroll
-                    var b = parseInt($(".main-title").css("fontSize").slice(0,-2));
-                    if (b < 48) {
-                        b += ss;
-                        $(".main-title").css("fontSize", (b + "px"));
-                    }
-                }
-                lastScrollTop = st;
-            });
-        });
-
-    </script>
 
 </body>
 

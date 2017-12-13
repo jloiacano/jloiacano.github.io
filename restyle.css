@@ -62,7 +62,7 @@ html {
 }
 
 .paralax-bg-image-3 {
-    background-image: url("../images/background/bottom-chicago-2.jpg");
+    background-image: url("../images/background/bottom-chicago-3.jpg");
 }
 
 .paralax-bg-image-4 {
@@ -120,6 +120,16 @@ html {
 }
 
 .skill-row a:visited {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.contact-row a:link {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.contact-row a:visited {
     color: inherit;
     text-decoration: inherit;
 }
