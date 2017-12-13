@@ -38,12 +38,12 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">His Links <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="https://github.com/jloiacano?tab=repositories" target="_blank"><img src="images/gitHubLogo40.png" alt="GitHub Logo"/><span class="singleSpace">His GitHub Repo</span></a></li>
+                            <li><a href="https://github.com/jloiacano?tab=repositories" target="_blank"><img src="/images/gitHubLogo40.png" alt="GitHub Logo"/><span class="singleSpace">His GitHub Repo</span></a></li>
                             <li role="separator" class="divider"></li>
-                            <li><a href="https://twitter.com/byrd55" target="_blank"><img src="images/twitterLogo40.png" alt="Twitter Logo"/><span class="singleSpace">His Twitter</span></a></li>
+                            <li><a href="https://twitter.com/byrd55" target="_blank"><img src="/images/twitterLogo40.png" alt="Twitter Logo"/><span class="singleSpace">His Twitter</span></a></li>
                             <li role="separator" class="divider"></li>
-                            <li><a href="https://www.instagram.com/jloiacano/?hl=en" target="_blank"><img src="images/instagram40.png" alt="Instagram Logo"/><span class="singleSpace">His Instagram</span></a></li>
-                            <li><a href="../docs/jLoiacanoResume.pdf" target="_blank"><img src="images/pdf40.png" alt="Resume PDF"/><span class="singleSpace">His Resume</span></a></li>
+                            <li><a href="https://www.instagram.com/jloiacano/?hl=en" target="_blank"><img src="/images/instagram40.png" alt="Instagram Logo"/><span class="singleSpace">His Instagram</span></a></li>
+                            <li><a href="/docs/jLoiacanoResume.pdf" target="_blank"><img src="/images/pdf40.png" alt="Resume PDF"/><span class="singleSpace">His Resume</span></a></li>
                         </ul>
                     </li>
                 </ul>
@@ -58,7 +58,7 @@
             <div class="row-fluid">
                 <div class="centering text-center">
                     <div class="main-title saira-black">
-                        <h1>A FULL-STACK AND MOBILE DEVELOPER</h1>
+                        <span>A FULL-STACK AND MOBILE DEVELOPER</span>
                     </div>
                 </div>
             </div>
@@ -148,6 +148,8 @@
                         </div>
                     </div>
 
+                    <hr />
+
                     <div class="row">
                         <h3>Some of the Android apps I have worked on:</h3>
                     </div>
@@ -180,8 +182,7 @@
                         </a>
                     </div>
 
-
-
+                    <hr />
 
                     <div class="row">
                         <h3>The way back machine (circa 2011):</h3>
@@ -235,6 +236,36 @@
             placement: 'bottom',
             html: true
         });
+
+        $(function() {
+            var lastScrollTop = 0,
+                delta = 5;
+            $(window).scroll(function(event) {
+                var st = $(this).scrollTop();
+                var ss = 1;
+
+                if (Math.abs(lastScrollTop - st) <= delta)
+                    return;
+
+                if (st > lastScrollTop) {
+                    // downscroll code
+                    var a = parseInt($(".main-title").css("fontSize").slice(0,-2));
+                    if (a > 0) {
+                        a -= ss;
+                        $(".main-title").css("fontSize", a + "px");
+                    }
+                } else {
+                    // upscroll
+                    var b = parseInt($(".main-title").css("fontSize").slice(0,-2));
+                    if (b < 48) {
+                        b += ss;
+                        $(".main-title").css("fontSize", (b + "px"));
+                    }
+                }
+                lastScrollTop = st;
+            });
+        });
+
     </script>
 
 </body>
