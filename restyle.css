@@ -1,7 +1,43 @@
+@font-face {
+    font-family:"Saira-Black";
+    src: url("fonts/Saira-Black.ttf")
+}
 
-body, html {
+@font-face {
+    font-family:"Saira-Regular";
+    src: url("fonts/Saira-Regular.ttf")
+}
+
+body,
+html {
     height: 100%;
     margin: 0;
+    font-family: 'Saira-Regular';
+}
+
+.saira-black {
+    font-family: 'Saira-Black';
+}
+
+.container-fluid{
+  height:100%;
+  display:table;
+  width: 100%;
+  padding: 0;
+}
+
+.row-fluid {height: 100%; display:table-cell; vertical-align: middle;}
+
+
+
+.centering {
+  float:none;
+  margin:0 auto;
+}
+
+.main-title {
+    color: white;
+    font-weight: 700;
 }
 
 .parallax {
@@ -19,12 +55,15 @@ body, html {
 .paralax-bg-image-1 {
     background-image: url('images/background/top-milky-way.jpg');
 }
+
 .paralax-bg-image-2 {
     background-image: url("../images/background/middle-sky.jpg");
 }
+
 .paralax-bg-image-3 {
     background-image: url("../images/background/bottom-chicago-2.jpg");
 }
+
 .paralax-bg-image-4 {
     background-image: url("../images/background/bottom-chicago.jpg");
 }
@@ -48,6 +87,7 @@ body, html {
     color: #DDDDDD;
     margin-bottom: 2em;
 }
+
 .scroller-padding {
     padding: 1em;
 }
@@ -60,11 +100,27 @@ body, html {
     width: 100%;
     align-content: center;
     text-align: center;
+    padding: 0.5em;
 }
 
 .skill-img {
     display: block;
     margin: 0 auto;
+}
+
+.skill-row {
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+.skill-row a:link {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.skill-row a:visited {
+    color: inherit;
+    text-decoration: inherit;
 }
 
 footer {
@@ -75,11 +131,4 @@ footer {
     padding-left: 1em;
     background-color: #101010;
     color: dimgray;
-}
-
-.test {
-    width: 100%;
-    height: 100%;
-    padding-top: 33%;
-    color: white;
 }

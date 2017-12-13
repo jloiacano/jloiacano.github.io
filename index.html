@@ -19,7 +19,7 @@
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
     <!-- Fixed navbar -->
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-inverse navbar-fixed-top saira-black">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -32,9 +32,9 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li id="home" class="nav-item"><a class="nav-link" href="#about">Who Is J?</a></li>
-                    <li id="about" class="nav-item"><a class="nav-link" href="#skills">What Does He Do?</a></li>
-                    <li id="talents" class="nav-item"><a class="nav-link" href="#contact">Contact Him!</a></li>
+                    <li id="home" class="nav-item"><a class="nav-link" href="#aboutScroller">Who Is J?</a></li>
+                    <li id="about" class="nav-item"><a class="nav-link" href="#skillsScroller">What Does He Do?</a></li>
+                    <li id="talents" class="nav-item"><a class="nav-link" href="#contactScroller">Contact Him!</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">His Links <span class="caret"></span></a>
                         <ul class="dropdown-menu">
@@ -43,6 +43,7 @@
                             <li><a href="https://twitter.com/byrd55" target="_blank"><img src="images/twitterLogo40.png" alt="Twitter Logo"/><span class="singleSpace">His Twitter</span></a></li>
                             <li role="separator" class="divider"></li>
                             <li><a href="https://www.instagram.com/jloiacano/?hl=en" target="_blank"><img src="images/instagram40.png" alt="Instagram Logo"/><span class="singleSpace">His Instagram</span></a></li>
+                            <li><a href="../docs/jLoiacanoResume.pdf" target="_blank"><img src="images/pdf40.png" alt="Resume PDF"/><span class="singleSpace">His Resume</span></a></li>
                         </ul>
                     </li>
                 </ul>
@@ -53,12 +54,18 @@
 
 
     <div class="parallax paralax-bg-image-1">
-        <div class="test">
-            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="centering text-center">
+                    <div class="main-title saira-black">
+                        <h1>A FULL-STACK AND MOBILE DEVELOPER</h1>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="scroller scroller-1" id="about">
+    <div class="scroller scroller-1" id="aboutScroller">
         <div class="scroller-padding">
             <div class="row" id="theAboutDiv">
                 <div class="col-lg-4 col-md-12 hidden-sm">
@@ -101,25 +108,32 @@
         </div>
     </div>
 
-    <div class="parallax paralax-bg-image-2"></div>
+    <div class="parallax paralax-bg-image-2">
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="centering text-center">
+                    <h1>THE SKY'S THE LIMIT</h1>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <div class="scroller scroller-2" id="skills">
+    <div class="scroller scroller-2" id="skillsScroller">
         <div class="scroller-padding">
             <div class="row" id="theSkillsDiv">
                 <div class="col-lg-4 col-md-12 hidden-sm">
                     <h1>SKILLS</h1>
                 </div>
                 <div class="col-lg-8 col-md-12">
-                    <h2>Projects:</h2>
                     <div class="row">
-                        <h3>Some of the recent websites I have worked on:</h3>
+                        <h3>Some of the recent websites I have worked on:</h3><br />
                     </div>
-                    <div class="row">
+                    <div class="row skill-row">
                         <div class="col-lg-4 col-md-6 col-xs-12">
 
                             <a href="https://github.com/jloiacano/BakedRaspberryPi">
-                                <div class="skill">bakedRaspberryPis.com</div>
                                 <img class="skill-img" src="images/projects/baked-raspberry-pis.png" alt="BakedRaspberryPis.com" />
+                                <div class="skill saira-black">Baked Raspberry Pis.com</div>
                                 <div class="skill">This is a project built in .NET. It uses a MySQL database for membership, the Braintree API for credit card processing, and the MailGun API for sending mail.</div>
                             </a>
                         </div>
@@ -127,23 +141,22 @@
                         <div class="col-lg-4 col-md-6 col-xs-12">
 
                             <a href="https://jloiacano.github.io/The-Zoe-Weather-Page/">
-                                <div class="skill">The Zoe Weather Page</div>
                                 <img class="skill-img" src="images/projects/the-zoe-weather-page.png" alt="the-zoe-weather-page.com" />
+                                <div class="skill saira-black">The Zoe Weather Page</div>
                                 <div class="skill">A weather page using the Yahoo weather API. My daughter was my UX/UI designer for this project. All artwork, color and design choices were made by Zoe.</div>
                             </a>
                         </div>
                     </div>
 
-
                     <div class="row">
                         <h3>Some of the Android apps I have worked on:</h3>
                     </div>
-                    <div class="row">
+                    <div class="row skill-row">
 
                         <a href="https://github.com/jloiacano/WineOh">
                             <div class="col-lg-4 col-md-6 col-xs-12">
-                                <div class="skill">Wine Oh!</div>
                                 <img class="skill-img" src="images/projects/wine-o-1.png" alt="Wine Oh! app" />
+                                <div class="skill saira-black">Wine Oh!</div>
                                 <div class="skill">A wine inventory tracking app.</div>
                             </div>
                         </a>
@@ -151,8 +164,8 @@
 
                         <a href="https://github.com/jloiacano/WineOh">
                             <div class="col-lg-4 col-md-6 col-xs-12">
-                                <div class="skill">Tech2U</div>
                                 <img class="skill-img" src="images/projects/tech2u.png" alt="Tech2u app" />
+                                <div class="skill">Tech2U</div>
                                 <div class="skill">A tech news app using 'News API'</div>
                             </div>
                         </a>
@@ -160,30 +173,32 @@
 
                         <a href="https://github.com/jloiacano/Libertyville">
                             <div class="col-lg-4 col-md-6 col-xs-12">
-                                <div class="skill">Libertyville</div>
                                 <img class="skill-img" src="images/projects/libertyville.png" alt="Libertyville app" />
+                                <div class="skill">Libertyville</div>
                                 <div class="skill">A tourguide app of my town including restaurants, parks and other attractions.</div>
                             </div>
                         </a>
                     </div>
 
 
+
+
                     <div class="row">
                         <h3>The way back machine (circa 2011):</h3>
                     </div>
-                    <div class="row">
+                    <div class="row skill-row">
                         <a href="http://www.sot-bakery.com">
                             <div class="col-lg-4 col-md-6 col-xs-12">
-                                <div class="skill">sot-bakery.com</div>
                                 <img class="skill-img" src="images/projects/sot-bakery.png" alt="sot-bakery.com" />
+                                <div class="skill">sot-bakery.com</div>
                                 <div class="skill">A web page I built for my wifes bakery.</div>
                             </div>
                         </a>
 
                         <a href="http://nleca.org/">
                             <div class="col-lg-4 col-md-6 col-xs-12">
-                                <div class="skill">nleca.org</div>
                                 <img class="skill-img" src="images/projects/nleca-dot-org.png" alt="nleca.org" />
+                                <div class="skill">nleca.org</div>
                                 <div class="skill">A web page I built for my community.</div>
                             </div>
                         </a>
@@ -203,7 +218,7 @@
 
     <div class="parallax paralax-bg-image-3"></div>
 
-    <div class="scroller scroller-3" id="contact">
+    <div class="scroller scroller-3" id="contactScroller">
         <div class="scroller-padding">
             <h1>CONTACT</h1>
         </div>
