@@ -19,6 +19,11 @@ html {
     font-family: 'Saira-Black';
 }
 
+.logo-brand {
+    height: 27px;
+    margin: 13px;
+}
+
 .container-fluid{
   height:100%;
   display:table;

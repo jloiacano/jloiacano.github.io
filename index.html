@@ -28,7 +28,9 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-                <a id="home" class="navbar-brand" href="">JL</a>
+                <a id="home" class="navbar-left" href="#">
+                <img class="logo-brand" src="/images/myLogo.png" alt="JLLogo"/>
+                </a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
@@ -113,7 +115,7 @@
         <div class="container-fluid">
             <div class="row-fluid">
                 <div class="centering text-center">
-                    <h1>THE SKY'S THE LIMIT</h1>
+                    <!-- add something here? maybe... -->
                 </div>
             </div>
         </div>
@@ -244,42 +246,7 @@
     </footer>
 
 
-    <script>
-        $('#theAboutDiv [data-toggle="tooltip"]').tooltip({
-            animation: 'fade',
-            placement: 'bottom',
-            html: true
-        });
-
-        $(function() {
-            var lastScrollTop = 0,
-                delta = 5;
-            $(window).scroll(function(event) {
-                var st = $(this).scrollTop();
-                var ss = 1;
-
-                if (Math.abs(lastScrollTop - st) <= delta)
-                    return;
-
-                if (st > lastScrollTop) {
-                    // downscroll code
-                    var a = parseInt($(".main-title").css("fontSize").slice(0, -2));
-                    if (a > 0) {
-                        a -= ss;
-                        $(".main-title").css("fontSize", a + "px");
-                    }
-                } else {
-                    // upscroll
-                    var b = parseInt($(".main-title").css("fontSize").slice(0, -2));
-                    if (b < 48) {
-                        b += ss;
-                        $(".main-title").css("fontSize", (b + "px"));
-                    }
-                }
-                lastScrollTop = st;
-            });
-        });
-    </script>
+    <script src="js/portfolio.js"></script>
 
 
 </body>
