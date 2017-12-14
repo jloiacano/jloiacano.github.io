@@ -8,27 +8,13 @@ $(function () {
     var lastScrollTop = 0,
         delta = 5;
     $(window).scroll(function (event) {
-        var st = $(this).scrollTop();
-        var ss = 1;
+        var range = (window.innerHeight - 100) / 2;
+        var increment = range / 48;
 
-        if (Math.abs(lastScrollTop - st) <= delta)
-            return;
-
-        if (st > lastScrollTop) {
-            // downscroll code
-            var a = parseInt($(".main-title").css("fontSize").slice(0, -2));
-            if (a > 0) {
-                a -= ss;
+        if ( window.pageYOffset < (window.innerHeight - 60 / 2 ) && window.pageYOffset > 0) {
+            var a = 48 - ( window.pageYOffset / increment );
                 $(".main-title").css("fontSize", a + "px");
-            }
-        } else {
-            // upscroll
-            var b = parseInt($(".main-title").css("fontSize").slice(0, -2));
-            if (b < 48) {
-                b += ss;
-                $(".main-title").css("fontSize", (b + "px"));
-            }
+
         }
-        lastScrollTop = st;
     });
 });
