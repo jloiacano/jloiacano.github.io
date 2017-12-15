@@ -56,8 +56,8 @@ html {
     position: absolute;
     top: 90%;
     left: 50%;
-    width: 80px;
-    height: 80px;
+    width: 6em;
+    height: 6em;
     transform: translate(-50%, -50%);
 }
 
@@ -66,9 +66,9 @@ html {
     position: absolute;
     width: 100%;
     height: 100%;
-    border-left: 26.6666px solid rgba(255, 255, 255, 0.9);
-    border-bottom: 26.6666px solid rgba(255, 255, 255, 0.9);
-    transform: translate(26.6666px, 106.6666px)rotate(-45deg);
+    border-left: 2em solid rgba(255, 255, 255, 0.5);
+    border-bottom: 2em solid rgba(255, 255, 255, 0.5);
+    transform: translate(2em, 8em)rotate(-45deg);
     animation: arrows 2s linear infinite;
 }
 
@@ -77,33 +77,33 @@ html {
     position: absolute;
     width: 100%;
     height: 100%;
-    border-left: 26.6666px solid rgba(255, 255, 255, 0.9);
-    border-bottom: 26.6666px solid rgba(255, 255, 255, 0.9);
-    transform: translate(53.3333px, 0px)rotate(-45deg);
-    animation: arrows 2s linear infinite -1.4s;
+    border-left: 2em solid rgba(255, 255, 255, 0.5);
+    border-bottom: 2em solid rgba(255, 255, 255, 0.5);
+    transform: translate(4em, 0em)rotate(-45deg);
+    animation: arrows 2s linear infinite 1.0s;
 }
 
 
 @keyframes arrows {
     0% {
-        border-left: 13.3333px solid rgba(255, 255, 255, 0);
-        border-bottom: 13.3333px solid rgba(255, 255, 255, 0);
-        transform: translate(-13.3333px, -53.3333px)rotate(-45deg);
+        border-left: 1em solid rgba(255, 255, 255, 0);
+        border-bottom: 1em solid rgba(255, 255, 255, 0);
+        transform: translate(-1em, -4em)rotate(-45deg);
     }
     25%,
     75% {
-        border-left: 13.3333px solid rgba(255, 255, 255, 0.3);
-        border-bottom: 13.3333px solid rgba(255, 255, 255, 0.3);
+        border-left: 1em solid rgba(255, 255, 255, 0.1);
+        border-bottom: 1em solid rgba(255, 255, 255, 0.1);
     }
     50% {
-        border-left: 13.3333px solid rgba(255, 255, 255, 0.8);
-        border-bottom: 13.3333px solid rgba(255, 255, 255, 0.8);
-        transform: translate(-13.3333px, 0px)rotate(-45deg);
+        border-left: 1em solid rgba(255, 255, 255, 0.5);
+        border-bottom: 1em solid rgba(255, 255, 255, 0.5);
+        transform: translate(-1em, 0em)rotate(-45deg);
     }
     100% {
-        border-left: 13.3333px solid rgba(255, 255, 255, 0);
-        border-bottom: 13.3333px solid rgba(255, 255, 255, 0);
-        transform: translate(-13.3333px, 53.3333px)rotate(-45deg);
+        border-left: 1em solid rgba(255, 255, 255, 0);
+        border-bottom: 1em solid rgba(255, 255, 255, 0);
+        transform: translate(-1em, 4em)rotate(-45deg);
     }
 }
 
