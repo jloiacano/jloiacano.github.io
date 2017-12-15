@@ -1,10 +1,10 @@
 @font-face {
-    font-family:"Saira-Black";
+    font-family: "Saira-Black";
     src: url("fonts/Saira-Black.ttf")
 }
 
 @font-face {
-    font-family:"Saira-Regular";
+    font-family: "Saira-Regular";
     src: url("fonts/Saira-Regular.ttf")
 }
 
@@ -24,26 +24,87 @@ html {
     margin: 13px;
 }
 
-.container-fluid{
-  height:100%;
-  display:table;
-  width: 100%;
-  padding: 0;
+.container-fluid {
+    height: 100%;
+    display: table;
+    width: 100%;
+    padding: 0;
 }
 
-.row-fluid {height: 100%; display:table-cell; vertical-align: middle;}
+.row-fluid {
+    height: 90%;
+    display: table-cell;
+    vertical-align: middle;
+}
 
 
 
 .centering {
-  float:none;
-  margin:0 auto;
+    float: none;
+    margin: 0 auto;
 }
 
 .main-title {
     color: white;
     font-size: 48px;
     font-weight: 700;
+}
+
+.arrows {
+    visibility: hidden;
+    position: relative;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    transform: translate(-50%, -50%);
+}
+
+.arrows:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-left: 26.6666px solid rgba(255, 255, 255, 0.9);
+    border-bottom: 26.6666px solid rgba(255, 255, 255, 0.9);
+    transform: translate(26.6666px, 106.6666px)rotate(-45deg);
+    animation: arrows 2s linear infinite;
+}
+
+.arrows:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-left: 26.6666px solid rgba(255, 255, 255, 0.9);
+    border-bottom: 26.6666px solid rgba(255, 255, 255, 0.9);
+    transform: translate(53.3333px, 0px)rotate(-45deg);
+    animation: arrows 2s linear infinite -1.4s;
+}
+
+
+@keyframes arrows {
+    0% {
+        border-left: 13.3333px solid rgba(255, 255, 255, 0);
+        border-bottom: 13.3333px solid rgba(255, 255, 255, 0);
+        transform: translate(-13.3333px, -53.3333px)rotate(-45deg);
+    }
+    25%,
+    75% {
+        border-left: 13.3333px solid rgba(255, 255, 255, 0.3);
+        border-bottom: 13.3333px solid rgba(255, 255, 255, 0.3);
+    }
+    50% {
+        border-left: 13.3333px solid rgba(255, 255, 255, 0.8);
+        border-bottom: 13.3333px solid rgba(255, 255, 255, 0.8);
+        transform: translate(-13.3333px, 0px)rotate(-45deg);
+    }
+    100% {
+        border-left: 13.3333px solid rgba(255, 255, 255, 0);
+        border-bottom: 13.3333px solid rgba(255, 255, 255, 0);
+        transform: translate(-13.3333px, 53.3333px)rotate(-45deg);
+    }
 }
 
 .parallax {

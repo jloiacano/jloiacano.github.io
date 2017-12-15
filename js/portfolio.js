@@ -20,3 +20,11 @@ $(function () {
         }
     });
 });
+
+$(".title-text").hover(
+  function() {
+    $(".arrows").css( "visibility", "visible" );
+  }, function() {
+    $(".arrows").css( "visibility", "hidden" );
+  }
+);
