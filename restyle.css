@@ -139,6 +139,8 @@ html {
 
 .scroller {
     background-color: transparent;
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
 
 .scroller-1 {
