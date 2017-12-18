@@ -138,31 +138,76 @@ html {
 }
 
 .scroller {
-    background-color: transparent;
+    position: relative;
+    background-color: #333333;
+    color: #DDDDDD;
     padding-top: 2em;
     padding-bottom: 2em;
 }
 
 .scroller-1 {
-    background-color: #333333;
-    color: #DDDDDD;
 }
 
 .scroller-2 {
-    background-color: #333333;
-    color: #DDDDDD;
 }
 
 .scroller-3 {
-    background-color: #333333;
-    color: #DDDDDD;
     margin-bottom: 2em;
 }
 
 .scroller-padding {
-    padding: 1em;
+    position: relative;
+    margin-top: -50px;
+    margin-bottom: -50px;
+    padding: 2em;
+    z-index: 1;
 }
 
+.scroller-top-left {
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    top: 0;
+    left: 0;
+    background-image: url(images/background/corner-top-left.png);
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+
+.scroller-top-right {
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    top: 0;
+    right: 0;
+    background-image: url(images/background/corner-top-right.png);
+    background-repeat: no-repeat;
+    z-index: 2;
+
+}
+
+.scroller-bottom-left {
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    bottom: 0;
+    left: 0;
+    background-image: url(images/background/corner-bottom-left.png);
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.scroller-bottom-right {
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    bottom: 0;
+    right: 0;
+    background-image: url(images/background/corner-bottom-right.png);
+    background-repeat: no-repeat;
+    z-index: 1;
+
+}
 .about-header {
     text-align: center;
 }
