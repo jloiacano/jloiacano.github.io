@@ -152,8 +152,15 @@ html {
 }
 
 .scroller-3 {
-    margin-bottom: 2em;
+    margin: -10em 0em;
+    height: 8em;
 }
+    .scroller-3 .contact-left {
+        margin-top: 1em;
+    }
+    .scroller-3 .contact-right {
+        margin-top: 3em;
+    }
 
 .scroller-padding {
     position: relative;
